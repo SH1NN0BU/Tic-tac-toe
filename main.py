@@ -1,8 +1,11 @@
+# Console game Tic Tac Toe
+
 # Card Initialization
 maps [1,2,3,
       4,5,6,
       7,8,9]
 # Initialization of winning lines
+
 victories = [[0,1,2],
              [3,4,5],
              [6,7,8],
@@ -11,6 +14,7 @@ victories = [[0,1,2],
              [2,5,8],
              [0,4,8],
              [2,4,6]]
+
 # Displaying the map on the screen
 def print_maps():
     print(maps[0], end = " ")
@@ -23,4 +27,9 @@ def print_maps():
  
     print(maps[6], end = " ")
     print(maps[7], end = " ")
-    print(maps[8])    
+    print(maps[8])
+
+# Make a move to the cell
+def step_maps(step,symbol):
+    ind = maps.index(step)
+    maps[ind] = symbol
