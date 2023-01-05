@@ -33,3 +33,15 @@ def print_maps():
 def step_maps(step,symbol):
     ind = maps.index(step)
     maps[ind] = symbol
+
+# Get the current result of the game
+def get_result():
+    win = ""
+ 
+    for i in victories:
+        if maps[i[0]] == "X" and maps[i[1]] == "X" and maps[i[2]] == "X":
+            win = "X"
+        if maps[i[0]] == "O" and maps[i[1]] == "O" and maps[i[2]] == "O":
+            win = "O"   
+             
+    return win
