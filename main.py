@@ -1,11 +1,11 @@
 # Console game Tic Tac Toe
 
 # Card Initialization
-maps [1,2,3,
-      4,5,6,
-      7,8,9]
-# Initialization of winning lines
+maps = [1,2,3,
+        4,5,6,
+        7,8,9]
 
+# Initialization of winning lines.
 victories = [[0,1,2],
              [3,4,5],
              [6,7,8],
