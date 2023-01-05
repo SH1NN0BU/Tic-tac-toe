@@ -11,4 +11,16 @@ victories = [[0,1,2],
              [2,5,8],
              [0,4,8],
              [2,4,6]]
-# 
+# Displaying the map on the screen
+def print_maps():
+    print(maps[0], end = " ")
+    print(maps[1], end = " ")
+    print(maps[2])
+ 
+    print(maps[3], end = " ")
+    print(maps[4], end = " ")
+    print(maps[5])
+ 
+    print(maps[6], end = " ")
+    print(maps[7], end = " ")
+    print(maps[8])    
