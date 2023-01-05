@@ -62,3 +62,19 @@ while game_over == False:
     else:
         symbol = "O"
         step = int(input("Игрок 2, ваш ход: "))
+
+# We make a move to the specified cell
+    step_maps(step,symbol)
+
+# Let's determine the winner
+    win = get_result()
+    if win != "":
+        game_over = True
+    else:
+        game_over = False
+ 
+    player1 = not(player1)        
+ 
+#The game is over. Let's show the map. We will announce the winner.
+print_maps()
+print("Победил", win)
