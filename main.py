@@ -45,3 +45,20 @@ def get_result():
             win = "O"   
              
     return win
+
+# The main program
+game_over = False
+player1 = True
+ 
+while game_over == False:
+ 
+    # Showing the map
+    print_maps()
+ 
+    # Let's ask the player where to make a move
+    if player1 == True:
+        symbol = "X"
+        step = int(input("Игрок 1, ваш ход: "))
+    else:
+        symbol = "O"
+        step = int(input("Игрок 2, ваш ход: "))
